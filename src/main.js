@@ -8,7 +8,7 @@ import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
-const endpoint = 'https:/eichkamp.cdn.prismic.io/api/v2'
+const endpoint = 'https://eichkamp.cdn.prismic.io/api/v2'
 
 Vue.config.productionTip = false
 
