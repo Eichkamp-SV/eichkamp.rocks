@@ -1,4 +1,6 @@
-# eichkamp
+# Website https://eichkamp.rocks
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/16e05972-4424-4bfe-9f61-76690cc87ff9/deploy-status)](https://app.netlify.com/sites/eichkamp-rocks/deploys)
 
 ## Project setup
 ```
