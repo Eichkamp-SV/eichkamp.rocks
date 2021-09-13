@@ -1,10 +1,10 @@
 <template>
-    <prismic-rich-text :field="slice.primary.text" />
+    <prismic-rich-text :field="slice.primary.text_area" />
 </template>
 
 <script>
 export default {
-    name: 'Text',
+    name: 'TextBlock',
     props: {
         slice: Object
     }
