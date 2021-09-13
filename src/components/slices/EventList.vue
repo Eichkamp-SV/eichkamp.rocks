@@ -5,8 +5,11 @@
       <ul>
         <li v-for="event in events" v-bind:key="event.start_date">
           <div class="event-list__event">
-            <p class="title">{{ $prismic.asText(event.data.title) }}</p>
-            <p class="date">{{ formatDate(event.data.start_date, event.data.end_date) }}</p>
+            <p class="event-list__title">{{ $prismic.asText(event.data.title) }}</p>
+            <p class="event-list__date">
+              <font-awesome-icon :icon="['far', 'calendar-alt']"/>
+              {{ formatDate(event.data.start_date, event.data.end_date) }}
+            </p>
             <prismic-rich-text :field="event.data.description" />
           </div>
         </li>
@@ -70,3 +73,7 @@ export default {
   }
 }
 </script>
+
+<style>
+@import '../../assets/css/eventlist.css'
+</style>

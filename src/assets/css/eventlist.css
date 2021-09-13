@@ -1,0 +1,26 @@
+#app .content .event-list__list ul {
+    margin-left: 0;
+    margin-top: 4rem;
+}
+
+#app .content .event-list__list li {
+    list-style-type: none;
+}
+
+#app .event-list__event {
+    box-shadow: 0px 0px 7px 2px var(--grey);
+    padding: 1.5rem;
+    margin-top: 2.5rem;
+}
+
+#app .event-list__title {
+    font-size: 2rem;
+}
+
+#app .event-list__date {
+    font-family: 'LatoWebBold';
+}
+
+#app .event-list__date svg {
+    margin-right: 1rem;
+}
