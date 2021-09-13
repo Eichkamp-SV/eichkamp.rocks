@@ -1,0 +1,24 @@
+#app nav {
+    position: fixed;
+    top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+}
+
+#app nav li {
+    display: inline-block;
+}
+
+#app nav li a {
+    background: var(--white);
+    padding: .9rem 2.5rem;
+    color: var(--dark-green);
+    box-shadow: 0px 0px 7px 2px var(--grey);
+}
+
+#app nav li a:hover {
+    text-decoration: underline;
+}

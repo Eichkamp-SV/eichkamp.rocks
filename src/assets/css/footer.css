@@ -1,0 +1,32 @@
+#app .footer {
+    margin: 5rem auto 0 auto;
+    border-top: 3px solid var(--dark-green);
+}
+
+#app .footer .inner {
+    margin: 2.5rem auto;
+    width: calc(90% - 2rem);
+    max-width: 78rem;
+}
+
+#app .footer ul {
+    margin-left: 0;
+}
+
+#app .footer li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+#app .footer li svg {
+    margin-right: .7rem;
+}
+
+#app .footer li a {
+    text-decoration: none;
+}
+
+#app .footer li a:hover {
+    text-decoration: underline;
+}

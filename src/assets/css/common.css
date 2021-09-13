@@ -1,0 +1,61 @@
+:root {
+    --dark-green: #18331b;
+    --dark-green-trans: rgb(77 87 54 / 28%);
+    --white: #fff;
+    --grey: rgba(0,0,0,.33);
+}
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    html {
+        font-size: 8.5px;
+    }
+}
+
+body {
+    font-family: 'LatoWeb', sans-serif;
+    font-size: 1.8rem;
+}
+
+#app h1, #app h2 {
+    color: var(--dark-green);
+    margin-bottom: 1.5rem;
+}
+
+#app h1 {
+    font-size: 3.8rem;
+    font-family: "LatoWebBold";
+}
+
+#app h2 {
+    font-size: 2.4rem;
+}
+
+#app h3 {
+    font-size: 2rem;
+}
+
+#app .content {
+    margin: 5rem auto;
+    width: calc(90% - 2rem);
+    max-width: 78rem;
+}
+
+#app .content p, #app .content ol, #app .content ul {
+    margin-bottom: 1.3rem;
+}
+
+#app .content ul, #app .content ol {
+    margin-left: 2.5rem;
+}
+
+#app .content a {
+    text-decoration: underline;
+}
+
+#app .content a:hover {
+    text-decoration: none;
+}
