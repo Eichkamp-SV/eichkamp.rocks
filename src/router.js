@@ -25,6 +25,8 @@ export default new Router({
       component: NotFound
     }
   ],
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'exact-active',
   scrollBehavior () {
     return { x: 0, y: 0 }
   }  

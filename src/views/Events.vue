@@ -1,7 +1,7 @@
 <template>
   <main class="main home">
     <app-header :data="document.data" :variant="'small'" />
-    <div class="content">
+    <div ref="test" class="content">
       <slice-zone :slices="document.data.body" :resolver="({ sliceName }) => slices[sliceName]"/>
     </div>
   </main>
@@ -43,6 +43,8 @@ export default {
         .then((document) => {
           if (document) {
             this.document = document;
+            let overlay = this.$parent.$refs.loadingOverlay.$refs.overlay
+            overlay.classList.add('hidden');
           } else {
             this.$router.push({ name: 'not-found' })
           }

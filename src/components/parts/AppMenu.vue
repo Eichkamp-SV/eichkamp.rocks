@@ -10,7 +10,13 @@
 
 <script>
 export default {
-    name: 'AppMenu'
+    name: 'AppMenu',
+    methods: {
+        removeOverlay () {
+            let overlay = this.$parent.$refs.loadingOverlay.$refs.overlay
+            overlay.classList.remove('hidden');
+        }
+    }
 }
 </script>
 

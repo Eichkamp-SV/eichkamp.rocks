@@ -41,11 +41,16 @@ export default {
         .then((document) => {
           if (document) {
             this.document = document;
+            this.removeLoader();
           } else {
             this.$router.push({ name: 'not-found' })
           }
         });
     },
+    removeLoader () {
+      let overlay = this.$parent.$refs.loadingOverlay.$refs.overlay
+      overlay.classList.add('hidden');
+    }
   },
   created () {
     this.getContent();

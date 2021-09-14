@@ -19,6 +19,10 @@
     height: 33vh;
 }
 
+#app .header.small .inner {
+    margin-top: 6rem;
+}
+
 #app .header .overlay {
     position: absolute;
     width: 100%;
