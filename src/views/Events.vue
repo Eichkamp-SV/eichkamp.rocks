@@ -1,5 +1,5 @@
 <template>
-  <main class="main home">
+  <main class="main events">
     <app-header :data="document.data" :variant="'small'" />
     <div ref="test" class="content">
       <slice-zone :slices="document.data.body" :resolver="({ sliceName }) => slices[sliceName]"/>
@@ -38,7 +38,7 @@ export default {
     }
   },
   methods: {
-    getContent () {
+    async getContent () {
       this.$prismic.client.getSingle('events_page')
         .then((document) => {
           if (document) {
@@ -51,8 +51,8 @@ export default {
         });
     },
   },
-  created () {
-    this.getContent();
+  async created () {
+    await this.getContent();
   }
 }
 </script>

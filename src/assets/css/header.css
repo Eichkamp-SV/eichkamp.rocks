@@ -19,6 +19,10 @@
     height: 33vh;
 }
 
+#app .header.micro {
+    height: 10vh;
+}
+
 #app .header.small .inner {
     margin-top: 6rem;
 }

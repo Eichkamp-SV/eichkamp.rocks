@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import NotFound from './views/NotFound.vue'
+import Preview from './views/Preview.vue'
 import Home from './views/Home.vue'
 import Events from './views/Events.vue'
 
@@ -18,6 +19,11 @@ export default new Router({
       path: '/events',
       name: 'events',
       component: Events
+    },
+    {
+      path: '/preview',
+      name: 'preview',
+      component: Preview
     },
     {
       path: '*',

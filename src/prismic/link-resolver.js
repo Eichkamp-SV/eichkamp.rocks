@@ -5,8 +5,9 @@ export default function(doc) {
       
       return "/";
     }
-    if (doc.uid) {
-      return "/" + doc.uid;
+    if (doc.type == 'events_page') {
+      return "/events";
     }
-    return "/404";
+
+    return "/not-found";
 } 

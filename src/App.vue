@@ -20,13 +20,21 @@ export default {
     AppMenu,
     AppFooter,
     LoadingOverlay
+  },
+  created() {
+    var scripts = [
+      "https://static.cdn.prismic.io/prismic.js?new=true&repo=eichkamp"
+    ];
+    scripts.forEach(script => {
+      let tag = document.createElement("script");
+      tag.setAttribute("src", script);
+      document.head.appendChild(tag);
+    });
   }
 }
 </script>
 
 <style>
-@import "https://cdn.jsdelivr.net/npm/animate.css@3.5.1";
-
 @import "./assets/css/fonts.css";
 @import "./assets/css/resetr.css";
 @import "./assets/css/common.css";
@@ -40,5 +48,4 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-
 </style>
