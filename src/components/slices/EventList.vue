@@ -58,7 +58,9 @@ export default {
       let strDateEnd = dateEnd.toLocaleDateString('en', dateOptions)
       let strTimeEnd = dateEnd.toLocaleTimeString('de-de', timeOptions)
 
-      if (strDateStart == strDateEnd) {
+      let diffHours = Math.abs(Math.round((dateEnd.getTime() - dateStart.getTime()) / 1000 / (60*60)));
+
+      if (diffHours < 24) {
         return strDateStart + ' | ' + strTimeStart + ' - ' + strTimeEnd;
       }
       
