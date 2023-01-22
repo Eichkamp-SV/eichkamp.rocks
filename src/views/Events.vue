@@ -43,8 +43,6 @@ export default {
         .then((document) => {
           if (document) {
             this.document = document;
-            let overlay = this.$parent.$refs.loadingOverlay.$refs.overlay
-            overlay.classList.add('hidden');
           } else {
             this.$router.push({ name: 'not-found' })
           }

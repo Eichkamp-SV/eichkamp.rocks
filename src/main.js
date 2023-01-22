@@ -18,7 +18,7 @@ library.add(faInstagram, faFacebook, faEnvelope, faCalendarAlt)
 Vue.use(PrismicVue, {
   endpoint,
   linkResolver
-})
+});
 
 new Vue({
   router,

@@ -1,6 +1,7 @@
 <template>
     <div class="event-list">
     <div class="event-list__no-events" v-if="eventCount == 0">There are no upcoming events.</div>
+    <div class="event-list__no-events" v-if="eventCount == -1">Loading...</div>
     <div class="event-list__list" v-else>
       <ul>
         <li v-for="event in events" v-bind:key="event.start_date">

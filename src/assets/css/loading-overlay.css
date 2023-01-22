@@ -4,10 +4,12 @@
     height: 100%;
     background: #fff;
     z-index: 3;
+    transition: opacity .6s;
 }
 
-.loading-overlay.hidden {
-    display: none;
+body.vsc-initialized .loading-overlay {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .loading-overlay .spinner {

@@ -10,16 +10,10 @@
 
 <script>
 export default {
-    name: 'AppMenu',
-    methods: {
-        removeOverlay () {
-            let overlay = this.$parent.$refs.loadingOverlay.$refs.overlay
-            overlay.classList.remove('hidden');
-        }
-    }
+    name: 'AppMenu'
 }
 </script>
 
 <style>
-@import '../../assets/css/menu.css'
+@import '../../assets/css/menu.css';
 </style>

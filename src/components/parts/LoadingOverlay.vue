@@ -11,5 +11,5 @@ export default {
 </script>
 
 <style>
-@import '../../assets/css/loading-overlay.css'
+@import '../../assets/css/loading-overlay.css';
 </style>
