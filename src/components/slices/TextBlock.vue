@@ -1,5 +1,7 @@
 <template>
-    <prismic-rich-text :field="slice.primary.text_area" />
+    <prismic-rich-text 
+      :class="slice.slice_label == 'infobox' ? 'infobox': ''" 
+      :field="slice.primary.text_area" />
 </template>
 
 <script>

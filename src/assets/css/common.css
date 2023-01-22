@@ -2,7 +2,9 @@
     --dark-green: #18331b;
     --dark-green-trans: rgb(77 87 54 / 28%);
     --white: #fff;
-    --grey: rgba(0,0,0,.33);
+    --grey: rgba(0 0 0 / 33%);
+    --red: rgb(204 186 184);
+    --red-light: rgb(242 238 237);
 }
 
 html {
@@ -58,4 +60,20 @@ body {
 
 #app .content a:hover {
     text-decoration: none;
+}
+
+#app .content .infobox {
+    padding: 2rem;
+    margin: 0 -2rem;
+    border-radius: 1rem;
+    border: 1px solid var(--red);
+    background: var(--red-light);
+}
+
+#app .content .infobox > *:last-child {
+    margin-bottom: 0;
+}
+
+#app .content .infobox + div{
+    margin-top: 3rem;
 }
