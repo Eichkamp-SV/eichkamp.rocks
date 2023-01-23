@@ -11,6 +11,10 @@
 
 <script>
 export default {
-  name: 'NotFound'
+  name: 'NotFound',
+  created () {
+    let overlay = this.$parent.$refs.loadingOverlay.$refs.overlay
+    overlay.classList.add('hidden');
+  }
 }
 </script>
